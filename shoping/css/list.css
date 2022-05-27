@@ -1,0 +1,59 @@
+/*列表页样式文件*/
+.nav {
+    /* 用于避免因为浮动和溢出导致下半部分的文字围绕着该模块布局 */
+    overflow: hidden;
+}
+/* 列表页头部秒杀模块 */
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+/* 列表页导航模块 */
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+/* 主体模块 */
+.sk_bd ul li {
+    float: left;
+    margin-right: 13px;
+    /* 由于盒子和li宽度都一样为290 所以会盖住一些边框，设置溢出即可（一般使用div盒子做，此处只不过使用溢出来先满足效果） */
+    overflow: hidden;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+/* 由于li自带1px的边框，所以设置伪元素选择器时给其也设置同等效果的边框，只不过颜色变为透明，让其只是变色 */
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}

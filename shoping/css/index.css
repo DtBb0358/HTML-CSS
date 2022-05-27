@@ -1,0 +1,315 @@
+/* 主题盒子专用的css文件 */
+.main {
+    width: 980px;
+    height: 455px;
+    /* 此处有问题，但没解决，此处问题为：margin-left必须为更大的宽度才行 */
+    margin-left: 465px;
+    margin-top: 10px;
+}
+.focus {
+    float: left;
+    width: 720px;
+    height: 455px;
+}
+.newsflash {
+    /* 使用右浮动就可以自动空出两个盒子中间的距离 */
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.news-hd h5{
+    float: left;
+    font-size: 14px;
+}
+.news-hd a{
+    float: right;
+}
+.news-hd i{
+    float: right;
+    font-size: 12px;
+}
+.news-bd {
+    padding: 5px 15px 0;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 设置文字超出显示 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    /* 去掉多出的边框 */
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+.lifeservice ul li .jltaa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 13px;
+	height: 16px;
+    background: url(../images/01-电商-主页-gai.png) no-repeat -1423px -358px;
+}
+.lifeservice ul li .jlta {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -17px -16px;
+}
+.lifeservice ul li .jltb {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -78px -16px;
+}
+.lifeservice ul li .jltc {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -141px -16px;
+}
+.lifeservice ul li .jltd {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -206px -16px;
+}
+.lifeservice ul li .jlte {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -17px -88px;
+}
+.lifeservice ul li .jltf {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -78px -88px;
+}
+.lifeservice ul li .jltg {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -141px -88px;
+}
+.lifeservice ul li .jlth {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -206px -88px;
+}
+.lifeservice ul li .jlti {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -17px -159px;
+}
+.lifeservice ul li .jltj {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -78px -159px;
+}
+.lifeservice ul li .jltk {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -141px -159px;
+}
+.lifeservice ul li .jltl {
+    display:inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -206px -159px;
+}
+.bargain {
+    margin-top: 5px;
+}
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 35px;
+}
+.recom_bd {
+    float: left;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+/* 写死img的宽高，就不用担心图片过高或者过小 */
+.recom_bd ul li {
+    width: 248px;
+    height: 163px;
+}
+/* -n+3即从第三个往前，因为最后一个小li不需要这条线 */
+.recom_bd ul li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #dddddd;
+}
+/* 好物模块 */
+.good_thing {
+    height: 281px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.good_thing_hd {
+    height: 57px;
+}
+.good_thing_hd ul {
+    position: relative;
+}
+.good_thing_hd ul .good_l {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    float: left;
+}
+.good_thing_hd ul .good_r {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    float: right;
+}
+.good_thing_bd ul li {
+    float: left;
+    width: 199px;
+    height: 163px;
+}
+.good_thing_fd ul li {
+    width: 199px;
+    height: 62px;
+    float: left;
+    text-align: center;
+} 
+.good_thing_fd ul li:nth-child(-n+5) {
+    border-right: 1px solid #ccc;
+}
+.good_thing_bd ul {
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+.good_thing_fd ul li p {
+    font-size: 16px;
+    color: #f81d09;
+    font-weight: 700;
+}
+/* 1楼 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+.tab_list ul li {
+    float: left;   
+}
+.tab_list ul li a {
+    margin: 0 15px;
+}
+.floor .w {
+    margin-top: 30px;
+}
+/* 主体 */
+.box_bd {
+    height: 361px;
+}
+/* 最亲一级的div添加浮动即可都genguol，子代选择器 */
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+/* 每个盒子都单独设置宽度 */
+.col_210 {
+    width: 210px;
+    text-align: center;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    line-height: 33px;
+    text-align: center;
+    margin-right: 10px;
+}
+/* 给ul整体设置内边距就不用再给li单独设置左右了，只需要设置li的右外边距即可*/
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 219px;
+}
+.bb {
+    /* 一般情况下，如果a需要包含有宽度的盒子，要转换为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
